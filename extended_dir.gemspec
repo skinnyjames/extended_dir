@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'extended_dir'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.licenses    = ['MIT']
   s.summary     = "small utility library for loading files in a priortized sort order"
   s.description = "small utility library for loading files in a priortized sort order"
