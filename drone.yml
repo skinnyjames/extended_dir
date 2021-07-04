@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+type: kubernetes
+
+steps: 
+- name: tests
+  image: ruby:3.0
+  commands: 
+    - bundle install
+    - rspec
