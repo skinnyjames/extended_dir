@@ -43,7 +43,7 @@ let's say one has a collection of files in a directory that depend on each other
 
   # or load them in order
 
-  ExtendedDir.load_all("#{__dir__}/lib", order: %[extra/mixin.rb, core/base.rb])
+  ExtendedDir.load_all("#{__dir__}/lib", order: %w[extra/mixin.rb, core/base.rb])
 
   # or require them in order
 
