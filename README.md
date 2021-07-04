@@ -34,7 +34,7 @@ let's say one has a collection of files in a directory that depend on each other
 ```ruby
   # /script.rb
   require "extended_dir"
-  files = ExtendedDir.entries("#{__dir__}/lib", order: %w[extra/mixin.rb, core/base.rb])
+  files = ExtendedDir.files("#{__dir__}/lib", order: %w[extra/mixin.rb, core/base.rb])
   
   # the files are returned prioritized in the load order if specified, 
   # and in default sort order if not
