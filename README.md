@@ -1,5 +1,7 @@
 # extended_dir
 
+[![Build Status](http://drone.skinnyjames.net/api/badges/skinnyjames/extended_dir/status.svg)](http://drone.skinnyjames.net/skinnyjames/extended_dir)
+
 library for prioritizing files in a directory according to load order
 
 ## installation
@@ -42,7 +44,7 @@ let's say one has a collection of files in a directory that depend on each other
   # or load them in order
 
   ExtendedDir.load_all("#{__dir__}/lib", order: %[extra/mixin.rb, core/base.rb])
-  
+
   # or require them in order
 
   ExtendedDir.require_all("#{__dir__}/lib", order: %w[extra/mixin.rb, core/base.rb])
